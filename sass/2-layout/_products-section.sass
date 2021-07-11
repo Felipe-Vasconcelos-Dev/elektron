@@ -1,0 +1,15 @@
+@use '../1-base/base-mixins'
+@use '../1-base/variables'
+@use 'layout-mixin'
+
+.products-grid
+    @include layout-mixin.layout-center-content
+    flex-direction: column
+    padding: 2rem 0
+    h2
+        font-size: 2rem
+        text-transform: uppercase
+    &-container
+        display: flex
+        justify-content: space-between
+        padding: 2rem 0
